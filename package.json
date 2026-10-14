@@ -1,0 +1,41 @@
+{
+  "name": "nerva-pencatatan-stok",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "seed": "node --env-file=.env scripts/seed.mjs",
+    "test:stock": "node --env-file=.env node_modules/tsx/dist/cli.mjs scripts/smoke-test.ts",
+    "test:import": "node --env-file=.env node_modules/tsx/dist/cli.mjs scripts/test-import.ts",
+    "test:ui": "node --env-file=.env scripts/ui-check.mjs",
+    "test:ui:shot": "node --env-file=.env scripts/ui-check.mjs --shot",
+    "test:opname": "node --env-file=.env node_modules/tsx/dist/cli.mjs scripts/test-opname.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "exceljs": "^4.4.0",
+    "jose": "^6.2.12",
+    "mysql2": "^3.24.5",
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "puppeteer-core": "^25.13.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
